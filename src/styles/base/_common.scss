@@ -1,0 +1,604 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: lanck.XIE
+ * @Date: 2019-05-29 10:34:44
+ * @LastEditTime: 2019-08-07 18:08:45
+ * @LastEditors: Please set LastEditors
+ */
+
+
+// 表单元素label 前的小红星
+.redStar::before {
+    content: '* ';
+    font-size: 18px;
+    color: #FF3B30;
+    vertical-align: sub;
+    margin-left: -8px;
+    display: inline-block;
+    width: 8px;
+}
+
+/*滚动条整体样式*/
+// ::-webkit-scrollbar {
+//   width: 3px !important;
+//   /*高宽分别对应横竖滚动条的尺寸*/
+//   height: 8px !important;
+//   background: #000000 !important;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   /*滚动条里面小方块*/
+//   border-radius: 5px !important;
+//   cursor: pointer;
+//   box-shadow: inset 0 0 5px rgba(240, 240, 240, 0.5) !important;
+//   background: #e5e5e5 !important;
+// }
+
+// ::-webkit-scrollbar-track {
+//   /*滚动条里面轨道*/
+//   box-shadow: inset 0 0 5px rgba(240, 240, 240, 0.5) !important;
+//   border-radius: 0 !important;
+//   background: rgba(240, 240, 240, 0.5) !important;
+// }
+
+// flex布局常用类
+.flex_r {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    //align-items
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    //justify-content:
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex_r_s {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    //align-items
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex_c {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    //纵向
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+
+    //align-items
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    //justify-content:
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex_c_s {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    //纵向
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    //justify-content:
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex_l_t {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    //align-items
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+}
+
+.flex_r_c {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    //align-items
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    //justify-content:
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.one-line {
+    white-space: nowrap;
+}
+
+// 常用字号
+.font12 {
+    font-size: 12px !important;
+}
+
+.font14 {
+    font-size: 14px !important;
+}
+
+.font16 {
+    font-size: 16px !important;
+}
+
+.font18 {
+    font-size: 18px !important;
+}
+
+.font20 {
+    font-size: 18px !important;
+}
+
+.font24 {
+    font-size: 24px !important;
+}
+
+.font32 {
+    font-size: 32px !important;
+}
+
+//常用margin
+.mt1 {
+    margin-top: 1px;
+}
+
+.mt2 {
+    margin-top: 2px;
+}
+
+.mt3 {
+    margin-top: 3px;
+}
+
+.mt4 {
+    margin-top: 4px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+//常用padding
+.pl5 {
+    padding-left: 5px;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.pl30 {
+    padding-left: 30px;
+}
+
+.pr10 {
+    padding-right: 10px;
+}
+
+// 其他特殊
+.cur_P {
+    cursor: pointer;
+}
+
+.cur_P_b {
+    cursor: pointer;
+
+    transition: 0.5s color cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+
+    &:hover {
+        color: #0077FF !important;
+    }
+}
+
+.text_right {
+    text-align: right;
+}
+
+// 字体颜色
+
+// transition
+//点击波纹效果
+.tran_cor {
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10vw;
+        height: 10vw;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 50%;
+        pointer-events: none;
+        //设置径向渐变
+        background-image: radial-gradient(ellipse, #999 10%, rgba(111, 111, 111, 0.5) 50%, rgba(0, 0, 0, 0)100%);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        transform: scale(10, 10);
+        opacity: 0;
+        transition: transform 0.5s, opacity 0.5s;
+    }
+
+    &:active:after {
+        transform: scale(0, 0);
+        opacity: 0.3;
+        //设置初始状态
+        transition: 0s;
+    }
+
+}
+
+// 常用动效class
+
+.fadeIn80 {
+    animation: mainUp ease 1s;
+}
+
+.tran_lazy {
+    transition: all .8s .7s cubic-bezier(0.600, 0.045, 0.165, 1.000);
+}
+
+//  <transition name="bpfade">
+
+.bottmTransfrom-enter-active {
+    transition: all 0.3s;
+}
+
+.bottmTransfrom-leave-active {
+    transition: all 0.3s;
+}
+
+.bottmTransfrom-enter {
+    transform: translateY(100%);
+}
+
+.bottmTransfrom-leave {
+    transform: translateY(0);
+}
+
+.bottmTransfrom-enter-to {
+    transform: translateY(0);
+}
+
+.bottmTransfrom-leave-to {
+    transform: translateY(100%);
+}
+
+/*  animated fn */
+
+@-webkit-keyframes mainDown {
+    0% {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mainDown {
+    0% {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes mainUp {
+    0% {
+        transform: translateX(35px) translateY(80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes mainUp {
+    0% {
+        transform: translateX(35px) translateY(80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes introLeft {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes introLeft {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes introLeftOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes introLeftOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes introQr {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes introQr {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes introQrOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes introQrOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes introDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes introDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes introDownOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+@keyframes introDownOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+@-webkit-keyframes introSlide {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes introSlide {
+    100% {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes introSlideOut {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes introSlideOut {
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes introLogoOut {
+    50% {
+        transform: translate(-50%, -50%) translate3d(0, 0, 1px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-80%, -50%) translate3d(0, 0, 1px);
+        opacity: 0;
+    }
+}
+
+@keyframes introLogoOut {
+    50% {
+        transform: translate(-50%, -50%) translate3d(0, 0, 1px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-80%, -50%) translate3d(0, 0, 1px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
