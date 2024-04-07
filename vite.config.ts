@@ -21,7 +21,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   },
-  // base: '/train_Engineered',
+  base: '/train_shoppingCar',
   build: {
     // 输出目录
     outDir: 'dist',

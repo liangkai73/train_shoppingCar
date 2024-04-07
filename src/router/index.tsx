@@ -1,12 +1,12 @@
-import { Navigate, createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 import ShoppingCar from '@/views/shop'
 const routers = createBrowserRouter([
   {
-    path: '/',
+    path: 'train_shoppingCar/',
     element: <ShoppingCar />
   },
   {
-    path: '/ShoppingCar',
+    path: 'train_shoppingCar/ShoppingCar',
     element: <ShoppingCar />
   }
 ])
