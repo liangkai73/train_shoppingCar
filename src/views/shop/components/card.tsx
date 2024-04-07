@@ -92,6 +92,7 @@ export default function Card(props: any) {
           </span>
         </p>
         <div
+          data-test-id='btn-addtocart'
           className='w-full h-[48px] mt-5 transition-all duration-200 leading-[48px] hover:bg-[#eabf00] cursor-pointer  text-center bg-[#000] text-white'
           onClick={() => {
             addToCar(proInfo)

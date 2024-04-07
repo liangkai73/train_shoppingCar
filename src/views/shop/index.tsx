@@ -334,7 +334,7 @@ export default function ShoppingCar() {
                     onClick={() => {
                       choseSize(item.size)
                     }}
-                    className={` ${item.isActive == true ? 'bg-[#000] text-white' : 'bg-[#ececec]'} w-[35px] mt-3 h-[35px] hover:border cursor-pointer border-[#000] flex flex-row justify-center items-center  rounded-full mr-2`}
+                    className={` ${item.isActive == true ? 'bg-[#000] text-white' : 'bg-[#ececec]'} w-[35px] mt-3 h-[35px] hover:border cursor-pointer border-[#000] flex flex-row justify-center items-center  rounded-full mr-2 chose-size`}
                   >
                     <span>{item.size}</span>
                   </li>
@@ -355,6 +355,7 @@ export default function ShoppingCar() {
               Cancle
             </Button>
             <Button
+              data-test-id='btn-suretocart'
               type='primary'
               size='large'
               disabled={sizeList.filter((n: sizeItem) => n.isActive).length == 0}

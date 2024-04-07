@@ -52,6 +52,7 @@ export default function CardList(props: any) {
                   </Button>
                   <Button
                     size='small'
+                    data-test-id='btn-addcartnum'
                     style={{ width: '25px' }}
                     onClick={() => {
                       handleAddToCart(item)
@@ -76,6 +77,7 @@ export default function CardList(props: any) {
         <span className='flex-1'></span>
         <Button
           block
+          data-test-id='btn-settlement'
           size='large'
           disabled={props.children == 0}
           className='mb-[15px]'

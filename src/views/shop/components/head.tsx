@@ -4,6 +4,7 @@ export default function Header(props: any) {
     <div className='w-full h-[50px] fixed top-0 right-0 bg-[#000] flex flex-row items-center justify-center z-10'>
       <span className='flex1'></span>
       <div
+        data-test-id='head-cart'
         className='w-[25px] h-[25px] relative mr-[30px] cursor-pointer'
         onClick={() => {
           isShowDrawer(true)
@@ -15,7 +16,7 @@ export default function Header(props: any) {
           alt=''
         />
 
-        <p className='px-[5px]  bg-[#eabf00] text-center rounded-full absolute text-[12px] top-[-4px] right-[-15px]'>
+        <p className='px-[5px]   bg-[#eabf00] text-center rounded-full absolute text-[12px] top-[-4px] right-[-15px]'>
           {props.children}
         </p>
       </div>
